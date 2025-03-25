@@ -16,7 +16,7 @@ const FRONTEND_URL_BASE = process.env.FRONTEND_URL_BASE || "http://localhost:517
 console.log("frontend url base", FRONTEND_URL_BASE);
 
 app.use(cors({
-  origin: FRONTEND_URL_BASE, 
+  origin: [FRONTEND_URL_BASE, ,"https://mern-onepiece-copy.vercel.app"], 
   credentials: true,
 }));
 
